@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexiServ – Pintor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ══════ NAV ══════ -->
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-dot"></div>
+    FlexiServ
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li class="nav-dropdown">
+      <a href="#">Servicios</a>
+      <div class="dropdown-menu" id="dropdownMenu"></div>
+    </li>
+    <li><a href="index.html#nosotros">Nosotros</a></li>
+    <li><a href="index.html#opiniones">Opiniones</a></li>
+    <li><a href="index.html#contacto">Contacto</a></li>
+  </ul>
+  <a href="https://wa.me/541160065713?text=Hola!%20Quiero%20consultar%20por%20un%20servicio"
+     class="nav-cta" target="_blank" rel="noopener">📞 Pedir cotización</a>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="m-section">Menú</div>
+  <a href="index.html">🏠 Inicio</a>
+  <div class="m-section">Servicios</div>
+  <div id="mobileServicesLinks"></div>
+  <a href="index.html#nosotros">ℹ️ Nosotros</a>
+  <a href="index.html#opiniones">⭐ Opiniones</a>
+  <a href="https://wa.me/541160065713?text=Hola!%20Quiero%20consultar%20por%20un%20servicio"
+     class="wa-mobile" target="_blank" rel="noopener">📱 Escribir al WhatsApp</a>
+</div>
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<section class="service-hero">
+  <div class="service-hero-bg"></div>
+  <div class="service-hero-grid"></div>
+  <div class="service-hero-inner">
+
+    <!-- LEFT: texto -->
+    <div>
+      <div class="breadcrumb">
+        <a class="breadcrumb-home" href="index.html">FlexiServ</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Pinturería</span>
+      </div>
+      <div class="service-hero-icon">🎨</div>
+      <h1>Pintor <em>Profesional</em></h1>
+      <p class="service-hero-desc">Diez años pintando hogares, locales y edificios en Buenos Aires. Trabajamos con los mejores materiales, preparamos bien las superficies y entregamos un terminado impecable que dura años.</p>
+      <div class="service-badges">
+        <div class="badge-item"><span class="bi">✓</span>Interior y exterior</div>
+<div class="badge-item"><span class="bi">✓</span>Enduído incluido</div>
+<div class="badge-item"><span class="bi">✓</span>Pintura latex</div>
+<div class="badge-item"><span class="bi">✓</span>Frentes de edificios</div>
+      </div>
+      <div class="service-hero-btns">
+        <a href="https://wa.me/541160065713?text=Hola!%20Necesito%20un%20pintor%20y%20quiero%20cotizar" class="btn-primary" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Pedir cotización gratis
+        </a>
+        <a href="index.html" class="btn-outline">← Volver al inicio</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: imagen -->
+    <div class="service-hero-image" id="heroImgWrap">
+  <img src="https://imgs.search.brave.com/ocviCXIn_V4N66pj_LXy1fkyqlVBnerX-JrHgGEt64w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE5/ODk2MTcwNC9lcy9m/b3RvL2hvbWJyZXMt/cGludGFuZG8tZWwt/aW50ZXJpb3ItdmFj/JUMzJUFEby1kZS1s/YS1jYXNhLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz14Qm45/WEhxRDhGUkhZYUgt/R29CYVVNcjNkNVhj/YXFqY3BYNnNsREhf/a05rPQ" alt="Servicio de Pintor">
+</div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     STATS BAR
+══════════════════════════════ -->
+<div class="exp-bar-section">
+  <div class="exp-stats-row">
+    <div class="exp-stat"><div class="exp-stat-n">10+</div><div class="exp-stat-l">Años de experiencia</div></div>
+<div class="exp-stat"><div class="exp-stat-n">450+</div><div class="exp-stat-l">Obras pintadas</div></div>
+<div class="exp-stat"><div class="exp-stat-n">4.9★</div><div class="exp-stat-l">Calificación</div></div>
+<div class="exp-stat"><div class="exp-stat-n">2</div><div class="exp-stat-l">Manos mínimo garantizadas</div></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     EXPERIENCIA
+══════════════════════════════ -->
+<section class="section">
+  <div class="exp-grid">
+
+    <div class="exp-text">
+      <div class="pill">10 años de trayectoria</div>
+      <h2 class="section-title">Nuestra historia<br>en Pinturería</h2>
+      <p>El secreto de una buena pintura no está solo en el color elegido sino en la preparación de la superficie. Desde 2014 trabajamos con un proceso de tres etapas: limpieza y reparación, enduído y lijado, y finalmente la aplicación de pintura en dos o más manos según corresponda.</p>
+<p>Usamos pinturas de primeras marcas (Sinteplast, Alba, Tersuave) según las necesidades de cada superficie. Protegemos muebles, zócalos y marcos con film y cinta de pintor. Al terminar, dejamos el espacio limpio y sin restos de pintura en ninguna superficie no deseada.</p>
+      <a href="https://wa.me/541160065713?text=Hola!%20Necesito%20un%20pintor%20y%20quiero%20cotizar" class="btn-primary" style="margin-top:1.5rem" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Consultar sin cargo
+      </a>
+    </div>
+
+    <div>
+      <p class="trayectoria-label">Nuestra trayectoria</p>
+      <div class="exp-milestones">
+        <div class="milestone"><div class="milestone-year">2014</div><div class="milestone-content"><h4>Pintura residencial</h4><p>Empezamos pintando departamentos y casas. La prolijidad en los detalles fue nuestra marca desde el inicio.</p></div></div>
+<div class="milestone"><div class="milestone-year">2017</div><div class="milestone-content"><h4>Exterior y frentes</h4><p>Ampliamos hacia la pintura de frentes y patios, incorporando equipos para trabajar en altura.</p></div></div>
+<div class="milestone"><div class="milestone-year">2020</div><div class="milestone-content"><h4>Locales comerciales</h4><p>Empezamos a tomar trabajos en fin de semana para no afectar la operación de locales y oficinas.</p></div></div>
+<div class="milestone"><div class="milestone-year">2024</div><div class="milestone-content"><h4>Edificios y consorcios</h4><p>Hoy trabajamos con varios consorcios de CABA para el mantenimiento regular de sus edificios.</p></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     REVIEWS
+══════════════════════════════ -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <div class="pill">⭐ Clientes satisfechos</div>
+      <h2 class="section-title">Lo que dicen sobre nosotros</h2>
+      <p class="section-sub" style="margin:0 auto">Opiniones reales de clientes de pinturería</p>
+    </div>
+    <div class="reviews-grid">
+      
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#1a6b3a22;color:#1a6b3a">ST</div>
+          <div>
+            <div class="review-name">Sofía T.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Pintaron todo el departamento en dos días. Terminaciones perfectas, enduído incluido, sin manchas en el piso ni en los muebles. El resultado quedó increíble. Los recomiendo sin dudarlo.</p>
+        <span class="review-tag">Pinturería</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#185fa522;color:#185fa5">AS</div>
+          <div>
+            <div class="review-name">Andrea S.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Excelente trabajo de pintura en el frente de la casa. Prepararon muy bien las superficies antes de pintar. El resultado duró muchísimo y el precio fue muy razonable.</p>
+        <span class="review-tag">Pinturería</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#853b0b22;color:#853b0b">NV</div>
+          <div>
+            <div class="review-name">Natalia V.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Pintaron el interior del local comercial en un fin de semana para no perder días de trabajo. Cumplieron el plazo, quedó hermoso y el precio fue muy conveniente. Gracias!</p>
+        <span class="review-tag">Pinturería</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#3b6d1122;color:#3b6d11">AF</div>
+          <div>
+            <div class="review-name">Adriana F.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Pintaron la fachada del edificio donde vivo. Trabajo muy prolijo, buen material, colores exactos a lo elegido. Varios vecinos ya les pidieron presupuesto para sus departamentos.</p>
+        <span class="review-tag">Pinturería</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#9b355622;color:#9b3556">VC</div>
+          <div>
+            <div class="review-name">Verónica C.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Pintaron toda la casa antes de mudarnos. Muy buenos terminando los bordes y zócalos. Limpiaron todo al finalizar. El trabajo quedó como de revista. Los volvemos a contratar.</p>
+        <span class="review-tag">Pinturería</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#534ab722;color:#534ab7">AR</div>
+          <div>
+            <div class="review-name">Analia R.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Pintaron el pasillo y las escaleras del edificio. Trabajo muy prolijo sin ensuciar las puertas ni las ventanas. Varios vecinos quedaron tan contentos que los contrataron para sus departamentos.</p>
+        <span class="review-tag">Pinturería</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     CTA
+══════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="service-cta-box">
+      <div class="pill">📱 Contacto directo</div>
+      <h2>¿Necesitás pinturería?</h2>
+      <p>Escribinos ahora y te respondemos en minutos. Presupuesto sin cargo, sin compromiso y sin letra chica.</p>
+      <a href="https://wa.me/541160065713?text=Hola!%20Necesito%20un%20pintor%20y%20quiero%20cotizar" class="wa-btn-big" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Escribir al 11-6006-5713
+      </a>
+      <div class="cta-info">
+        <div class="cta-info-item"><span>📍</span> Ciudad de Buenos Aires</div>
+        <div class="cta-info-item"><span>⏰</span> Lun–Sab, 8 a 20 hs</div>
+        <div class="cta-info-item"><span>⚡</span> Respuesta en minutos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FOOTER ══════ -->
+<footer>
+  <p><strong>FlexiServ</strong> · Minifletes y Servicios del Hogar · Buenos Aires, Argentina</p>
+  <p style="margin-top:.5rem">© 2025 FlexiServ. Todos los derechos reservados.</p>
+</footer>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/541160065713?text=Hola!%20Quiero%20consultar%20por%20un%20servicio"
+   class="wa-float" target="_blank" rel="noopener" title="WhatsApp">
+  <span class="wa-float-label">Escribinos ahora</span>
+  <svg viewBox="0 0 24 24" fill="white" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script src="nav.js"></script>
+</body>
+</html>

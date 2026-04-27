@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexiServ – Albañilería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ══════ NAV ══════ -->
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-dot"></div>
+    FlexiServ
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li class="nav-dropdown">
+      <a href="#">Servicios</a>
+      <div class="dropdown-menu" id="dropdownMenu"></div>
+    </li>
+    <li><a href="index.html#nosotros">Nosotros</a></li>
+    <li><a href="index.html#opiniones">Opiniones</a></li>
+    <li><a href="index.html#contacto">Contacto</a></li>
+  </ul>
+  <a href="https://wa.me/541160065713?text=Hola!%20Quiero%20consultar%20por%20un%20servicio"
+     class="nav-cta" target="_blank" rel="noopener">📞 Pedir cotización</a>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="m-section">Menú</div>
+  <a href="index.html">🏠 Inicio</a>
+  <div class="m-section">Servicios</div>
+  <div id="mobileServicesLinks"></div>
+  <a href="index.html#nosotros">ℹ️ Nosotros</a>
+  <a href="index.html#opiniones">⭐ Opiniones</a>
+  <a href="https://wa.me/541160065713?text=Hola!%20Quiero%20consultar%20por%20un%20servicio"
+     class="wa-mobile" target="_blank" rel="noopener">📱 Escribir al WhatsApp</a>
+</div>
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<section class="service-hero">
+  <div class="service-hero-bg"></div>
+  <div class="service-hero-grid"></div>
+  <div class="service-hero-inner">
+
+    <!-- LEFT: texto -->
+    <div>
+      <div class="breadcrumb">
+        <a class="breadcrumb-home" href="index.html">FlexiServ</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Albañilería</span>
+      </div>
+      <div class="service-hero-icon">🧱</div>
+      <h1>Albañilería <em>Profesional</em></h1>
+      <p class="service-hero-desc">Una década construyendo y refaccionando hogares porteños. Desde una pequeña reparación hasta una remodelación completa, trabajamos con los mejores materiales y la prolijidad que tu hogar merece.</p>
+      <div class="service-badges">
+        <div class="badge-item"><span class="bi">✓</span>Paredes y techos</div>
+<div class="badge-item"><span class="bi">✓</span>Pisos</div>
+<div class="badge-item"><span class="bi">✓</span>Remodelaciones</div>
+<div class="badge-item"><span class="bi">✓</span>Refacciones</div>
+      </div>
+      <div class="service-hero-btns">
+        <a href="https://wa.me/541160065713?text=Hola!%20Necesito%20un%20albanil%20y%20quiero%20cotizar" class="btn-primary" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Pedir cotización gratis
+        </a>
+        <a href="index.html" class="btn-outline">← Volver al inicio</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: imagen -->
+    <div class="service-hero-image" id="heroImgWrap">
+  <img src="https://imgs.search.brave.com/63OPBYT4Rw6wCZUpI9eczewp4hG-ItwH_p_xKqoOEeM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9hbGJh/JUMzJUIxaWwtZGVs/LXN0b25lY3V0dGVy/LWNvbi1lbC1tYXJ0/aWxsby15LWxhLWFs/YmElQzMlQjFpbGVy/JUMzJUFEYS1kZS10/cmFiYWpvLWRlLXBp/ZWRyYS0yODk0NDUy/OC5qcGc" alt="Albañilería Profesional">
+</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     STATS BAR
+══════════════════════════════ -->
+<div class="exp-bar-section">
+  <div class="exp-stats-row">
+    <div class="exp-stat"><div class="exp-stat-n">10+</div><div class="exp-stat-l">Años de experiencia</div></div>
+<div class="exp-stat"><div class="exp-stat-n">300+</div><div class="exp-stat-l">Obras realizadas</div></div>
+<div class="exp-stat"><div class="exp-stat-n">4.9★</div><div class="exp-stat-l">Calificación</div></div>
+<div class="exp-stat"><div class="exp-stat-n">100%</div><div class="exp-stat-l">Obras en tiempo</div></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     EXPERIENCIA
+══════════════════════════════ -->
+<section class="section">
+  <div class="exp-grid">
+
+    <div class="exp-text">
+      <div class="pill">10 años de trayectoria</div>
+      <h2 class="section-title">Nuestra historia<br>en Albañilería</h2>
+      <p>Desde 2014 llevamos adelante refacciones de todo tipo en Buenos Aires: baños, cocinas, terrazas, paredes con humedad, techos dañados y mucho más. Con el tiempo fuimos construyendo un equipo de albañiles altamente capacitados que comparten nuestra filosofía de trabajo prolijo.</p>
+<p>Nos diferenciamos por usar materiales de primera calidad y por mantener la obra limpia y ordenada en todo momento. Sabemos lo incómodo que es tener obreros en la casa, por eso respetamos los tiempos acordados y minimizamos el impacto en tu vida diaria.</p>
+      <a href="https://wa.me/541160065713?text=Hola!%20Necesito%20un%20albanil%20y%20quiero%20cotizar" class="btn-primary" style="margin-top:1.5rem" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Consultar sin cargo
+      </a>
+    </div>
+
+    <div>
+      <p class="trayectoria-label">Nuestra trayectoria</p>
+      <div class="exp-milestones">
+        <div class="milestone"><div class="milestone-year">2014</div><div class="milestone-content"><h4>Inicio en refacciones</h4><p>Empezamos con trabajos de revoque y reparación de paredes, construyendo reputación boca a boca.</p></div></div>
+<div class="milestone"><div class="milestone-year">2016</div><div class="milestone-content"><h4>Ampliamos el equipo</h4><p>Incorporamos especialistas en pisos, techos y obra húmeda para ofrecer un servicio completo.</p></div></div>
+<div class="milestone"><div class="milestone-year">2019</div><div class="milestone-content"><h4>Remodelaciones integrales</h4><p>Comenzamos a tomar proyectos de remodelación completa de baños y cocinas con muy buena respuesta.</p></div></div>
+<div class="milestone"><div class="milestone-year">2024</div><div class="milestone-content"><h4>Referentes del barrio</h4><p>Hoy somos la primera opción de cientos de familias en CABA para cualquier trabajo de albañilería.</p></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     REVIEWS
+══════════════════════════════ -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <div class="pill">⭐ Clientes satisfechos</div>
+      <h2 class="section-title">Lo que dicen sobre nosotros</h2>
+      <p class="section-sub" style="margin:0 auto">Opiniones reales de clientes de albañilería</p>
+    </div>
+    <div class="reviews-grid">
+      
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#1a6b3a22;color:#1a6b3a">RC</div>
+          <div>
+            <div class="review-name">Ramón C.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Hicieron una reparación importante en la terraza y también arreglaron unas grietas en las paredes. Trabajo prolijo y materiales de buena calidad. Volvería a contratarlos.</p>
+        <span class="review-tag">Albañilería</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#185fa522;color:#185fa5">NB</div>
+          <div>
+            <div class="review-name">Nicolás B.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Remodelaron el baño completo: cambiaron azulejos, sanitarios y el piso. Trabajo de primera, terminaciones prolijas y cumplieron los plazos acordados. Muy satisfecho.</p>
+        <span class="review-tag">Albañilería</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#853b0b22;color:#853b0b">RP</div>
+          <div>
+            <div class="review-name">Roberto P.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Construyeron un muro divisorio en el garage. Trabajo muy prolijo, usaron buen material y terminaron antes de lo estimado. Confiable y profesional. Los volvería a contratar.</p>
+        <span class="review-tag">Albañilería</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#3b6d1122;color:#3b6d11">DR</div>
+          <div>
+            <div class="review-name">Daniel R.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Repararon filtraciones en el techo y revocaron paredes exteriores. Trabajaron con seguridad y prolijidad. El resultado fue excelente y no tuvimos más problemas con la humedad.</p>
+        <span class="review-tag">Albañilería</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#9b355622;color:#9b3556">MQ</div>
+          <div>
+            <div class="review-name">Martín Q.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Remodelaron la cocina cambiando los mosaicos y reformando el mesón. Trabajo muy prolijo y en el tiempo estipulado. El resultado final superó lo que imaginábamos.</p>
+        <span class="review-tag">Albañilería</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#534ab722;color:#534ab7">JV</div>
+          <div>
+            <div class="review-name">Julio V.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Impermeabilizaron la losa y arreglaron la humedad del techo. Desde entonces no tuvimos más problemas con las filtraciones. Excelente trabajo, muy profesionales.</p>
+        <span class="review-tag">Albañilería</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     CTA
+══════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="service-cta-box">
+      <div class="pill">📱 Contacto directo</div>
+      <h2>¿Necesitás albañilería?</h2>
+      <p>Escribinos ahora y te respondemos en minutos. Presupuesto sin cargo, sin compromiso y sin letra chica.</p>
+      <a href="https://wa.me/541160065713?text=Hola!%20Necesito%20un%20albanil%20y%20quiero%20cotizar" class="wa-btn-big" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Escribir al 11-6006-5713
+      </a>
+      <div class="cta-info">
+        <div class="cta-info-item"><span>📍</span> Ciudad de Buenos Aires</div>
+        <div class="cta-info-item"><span>⏰</span> Lun–Sab, 8 a 20 hs</div>
+        <div class="cta-info-item"><span>⚡</span> Respuesta en minutos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FOOTER ══════ -->
+<footer>
+  <p><strong>FlexiServ</strong> · Minifletes y Servicios del Hogar · Buenos Aires, Argentina</p>
+  <p style="margin-top:.5rem">© 2025 FlexiServ. Todos los derechos reservados.</p>
+</footer>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/541160065713?text=Hola!%20Quiero%20consultar%20por%20un%20servicio"
+   class="wa-float" target="_blank" rel="noopener" title="WhatsApp">
+  <span class="wa-float-label">Escribinos ahora</span>
+  <svg viewBox="0 0 24 24" fill="white" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script src="nav.js"></script>
+</body>
+</html>

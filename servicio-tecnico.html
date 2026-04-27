@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexiServ – Servicio Técnico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ══════ NAV ══════ -->
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-dot"></div>
+    FlexiServ
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li class="nav-dropdown">
+      <a href="#">Servicios</a>
+      <div class="dropdown-menu" id="dropdownMenu"></div>
+    </li>
+    <li><a href="index.html#nosotros">Nosotros</a></li>
+    <li><a href="index.html#opiniones">Opiniones</a></li>
+    <li><a href="index.html#contacto">Contacto</a></li>
+  </ul>
+  <a href="https://wa.me/541160065713?text=Hola!%20Quiero%20consultar%20por%20un%20servicio"
+     class="nav-cta" target="_blank" rel="noopener">📞 Pedir cotización</a>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="m-section">Menú</div>
+  <a href="index.html">🏠 Inicio</a>
+  <div class="m-section">Servicios</div>
+  <div id="mobileServicesLinks"></div>
+  <a href="index.html#nosotros">ℹ️ Nosotros</a>
+  <a href="index.html#opiniones">⭐ Opiniones</a>
+  <a href="https://wa.me/541160065713?text=Hola!%20Quiero%20consultar%20por%20un%20servicio"
+     class="wa-mobile" target="_blank" rel="noopener">📱 Escribir al WhatsApp</a>
+</div>
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<section class="service-hero">
+  <div class="service-hero-bg"></div>
+  <div class="service-hero-grid"></div>
+  <div class="service-hero-inner">
+
+    <!-- LEFT: texto -->
+    <div>
+      <div class="breadcrumb">
+        <a class="breadcrumb-home" href="index.html">FlexiServ</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Servicio Técnico</span>
+      </div>
+      <div class="service-hero-icon">💻</div>
+      <h1>Servicio Técnico <em>a Domicilio</em></h1>
+      <p class="service-hero-desc">Diez años resolviendo problemas de computadoras y laptops en Buenos Aires. Vamos a tu casa, diagnosticamos el problema y lo resolvemos en el momento, sin necesidad de llevar el equipo.</p>
+      <div class="service-badges">
+        <div class="badge-item"><span class="bi">✓</span>PC y Laptops</div>
+<div class="badge-item"><span class="bi">✓</span>Formateo e instalación</div>
+<div class="badge-item"><span class="bi">✓</span>Recuperación de datos</div>
+<div class="badge-item"><span class="bi">✓</span>A domicilio</div>
+      </div>
+      <div class="service-hero-btns">
+        <a href="https://wa.me/541160065713?text=Hola!%20Necesito%20soporte%20tecnico%20para%20mi%20pc%20y%20quiero%20cotizar" class="btn-primary" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Pedir cotización gratis
+        </a>
+        <a href="index.html" class="btn-outline">← Volver al inicio</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: imagen -->
+    <div class="service-hero-image" id="heroImgWrap">
+  <img src="https://imgs.search.brave.com/kFtqfLcmF7-4ZDN-lp-I4d38K4O1_au_Wi_pKknq_1w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS90ZWNuaWNvLXJl/cGFyYW5kby1jb21w/dXRhZG9yYS1wb3J0/YXRpbC1yb3RhLWRl/c3Rvcm5pbGxhZG9y/XzE4NTEyNi05MjUu/anBnP3NlbXQ9YWlz/X2h5YnJpZCZ3PTc0/MCZxPTgw" alt="Soporte Técnico">
+</div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     STATS BAR
+══════════════════════════════ -->
+<div class="exp-bar-section">
+  <div class="exp-stats-row">
+    <div class="exp-stat"><div class="exp-stat-n">10+</div><div class="exp-stat-l">Años de experiencia</div></div>
+<div class="exp-stat"><div class="exp-stat-n">800+</div><div class="exp-stat-l">Equipos reparados</div></div>
+<div class="exp-stat"><div class="exp-stat-n">4.9★</div><div class="exp-stat-l">Calificación</div></div>
+<div class="exp-stat"><div class="exp-stat-n">95%</div><div class="exp-stat-l">Datos recuperados</div></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     EXPERIENCIA
+══════════════════════════════ -->
+<section class="section">
+  <div class="exp-grid">
+
+    <div class="exp-text">
+      <div class="pill">10 años de trayectoria</div>
+      <h2 class="section-title">Nuestra historia<br>en Soporte Técnico</h2>
+      <p>La tecnología puede ser un dolor de cabeza cuando algo sale mal. Desde 2014 ayudamos a cientos de personas en Buenos Aires a resolver sus problemas informáticos, siempre con paciencia, en lenguaje claro y sin marearlos con términos técnicos innecesarios.</p>
+<p>Trabajamos principalmente con Windows y nos especializamos en solucionar los problemas más comunes: virus y malware, computadoras lentas, pantallas azules, problemas de arranque y recuperación de datos de discos dañados. Vamos a domicilio para mayor comodidad del cliente.</p>
+      <a href="https://wa.me/541160065713?text=Hola!%20Necesito%20soporte%20tecnico%20para%20mi%20pc%20y%20quiero%20cotizar" class="btn-primary" style="margin-top:1.5rem" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Consultar sin cargo
+      </a>
+    </div>
+
+    <div>
+      <p class="trayectoria-label">Nuestra trayectoria</p>
+      <div class="exp-milestones">
+        <div class="milestone"><div class="milestone-year">2014</div><div class="milestone-content"><h4>Servicio a domicilio</h4><p>Desde el primer día optamos por ir a la casa del cliente. La comodidad y confianza que eso genera es invaluable.</p></div></div>
+<div class="milestone"><div class="milestone-year">2016</div><div class="milestone-content"><h4>Recuperación de datos</h4><p>Incorporamos equipos especializados para recuperar información de discos dañados, con 95% de éxito.</p></div></div>
+<div class="milestone"><div class="milestone-year">2019</div><div class="milestone-content"><h4>Soporte a mayores</h4><p>Desarrollamos una metodología especial para explicar y enseñar a adultos mayores con paciencia y claridad.</p></div></div>
+<div class="milestone"><div class="milestone-year">2024</div><div class="milestone-content"><h4>Técnico de confianza</h4><p>Hoy somos el técnico de cabecera de cientos de familias que saben que siempre van a recibir una respuesta honesta.</p></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     REVIEWS
+══════════════════════════════ -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <div class="pill">⭐ Clientes satisfechos</div>
+      <h2 class="section-title">Lo que dicen sobre nosotros</h2>
+      <p class="section-sub" style="margin:0 auto">Opiniones reales de clientes de soporte técnico</p>
+    </div>
+    <div class="reviews-grid">
+      
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#1a6b3a22;color:#1a6b3a">LM</div>
+          <div>
+            <div class="review-name">Lucía M.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Mi computadora andaba muy lenta y pensé que iba a tener que comprar una nueva. La revisaron, la formatearon y quedó como el primer día. Excelente servicio y muy amables.</p>
+        <span class="review-tag">Soporte Técnico</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#185fa522;color:#185fa5">LG</div>
+          <div>
+            <div class="review-name">Laura G.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Mi notebook no arrancaba. La revisaron, le instalaron Windows de nuevo y recuperaron todos mis archivos. Pensé que había perdido todo. Genios, de verdad. Gracias totales.</p>
+        <span class="review-tag">Soporte Técnico</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#853b0b22;color:#853b0b">FT</div>
+          <div>
+            <div class="review-name">Florencia T.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Tenía la PC llena de virus y andaba horrible. La limpiaron, le quitaron todo el malware y le hicieron mantenimiento preventivo. Quedó rapidísima. Muy recomendables.</p>
+        <span class="review-tag">Soporte Técnico</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#3b6d1122;color:#3b6d11">GH</div>
+          <div>
+            <div class="review-name">Graciela H.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">La PC del trabajo andaba lentísima. Vinieron, la revisaron, actualizaron el sistema y ampliaron la memoria RAM. Ahora vuela. Muy buen precio y atención excelente.</p>
+        <span class="review-tag">Soporte Técnico</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#9b355622;color:#9b3556">CS</div>
+          <div>
+            <div class="review-name">Claudia S.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Mi hijo rompió sin querer el teclado de la laptop. La llevamos, la revisaron y la repararon en el día. Precio justo y muy buena atención. Definitivamente los recomiendo.</p>
+        <span class="review-tag">Soporte Técnico</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#534ab722;color:#534ab7">RD</div>
+          <div>
+            <div class="review-name">Rosa D.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Recuperaron fotos y documentos de un disco rígido que se había roto. Pensé que había perdido todo. Me devolvieron el 95% de la información. Eternamente agradecida.</p>
+        <span class="review-tag">Soporte Técnico</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     CTA
+══════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="service-cta-box">
+      <div class="pill">📱 Contacto directo</div>
+      <h2>¿Necesitás soporte técnico?</h2>
+      <p>Escribinos ahora y te respondemos en minutos. Presupuesto sin cargo, sin compromiso y sin letra chica.</p>
+      <a href="https://wa.me/541160065713?text=Hola!%20Necesito%20soporte%20tecnico%20para%20mi%20pc%20y%20quiero%20cotizar" class="wa-btn-big" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Escribir al 11-6006-5713
+      </a>
+      <div class="cta-info">
+        <div class="cta-info-item"><span>📍</span> Ciudad de Buenos Aires</div>
+        <div class="cta-info-item"><span>⏰</span> Lun–Sab, 8 a 20 hs</div>
+        <div class="cta-info-item"><span>⚡</span> Respuesta en minutos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FOOTER ══════ -->
+<footer>
+  <p><strong>FlexiServ</strong> · Minifletes y Servicios del Hogar · Buenos Aires, Argentina</p>
+  <p style="margin-top:.5rem">© 2025 FlexiServ. Todos los derechos reservados.</p>
+</footer>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/541160065713?text=Hola!%20Quiero%20consultar%20por%20un%20servicio"
+   class="wa-float" target="_blank" rel="noopener" title="WhatsApp">
+  <span class="wa-float-label">Escribinos ahora</span>
+  <svg viewBox="0 0 24 24" fill="white" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script src="nav.js"></script>
+</body>
+</html>

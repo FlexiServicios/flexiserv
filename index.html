@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexiServ – Minifletes &amp; Servicios del Hogar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ══════ NAV ══════ -->
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-dot"></div>
+    FlexiServ
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li class="nav-dropdown">
+      <a href="#">Servicios</a>
+      <div class="dropdown-menu" id="dropdownMenu"></div>
+    </li>
+    <li><a href="index.html#nosotros">Nosotros</a></li>
+    <li><a href="index.html#opiniones">Opiniones</a></li>
+    <li><a href="index.html#contacto">Contacto</a></li>
+  </ul>
+  <a href="https://wa.me/541160065713?text=Hola!%20Quiero%20consultar%20por%20un%20servicio"
+     class="nav-cta" target="_blank" rel="noopener">📞 Pedir cotización</a>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="m-section">Menú</div>
+  <a href="index.html">🏠 Inicio</a>
+  <div class="m-section">Servicios</div>
+  <div id="mobileServicesLinks"></div>
+  <a href="index.html#nosotros">ℹ️ Nosotros</a>
+  <a href="index.html#opiniones">⭐ Opiniones</a>
+  <a href="https://wa.me/541160065713?text=Hola!%20Quiero%20consultar%20por%20un%20servicio"
+     class="wa-mobile" target="_blank" rel="noopener">📱 Escribir al WhatsApp</a>
+</div>
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Disponible en Buenos Aires · 10 años de trayectoria
+    </div>
+    <h1>Minifletes &amp;<br><em>Servicios del Hogar</em></h1>
+    <p class="hero-sub">
+      Mudanzas, albañilería, herrería, plomería, gasista, pinturería, parquet
+      y soporte técnico. Profesionales confiables con más de una década de experiencia.
+    </p>
+    <div class="hero-btns">
+      <a href="https://wa.me/541160065713?text=Hola!%20Quiero%20solicitar%20un%20servicio"
+         class="btn-primary" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Consultar por WhatsApp
+      </a>
+      <a href="#servicios" class="btn-outline">Ver todos los servicios ↓</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-n">4.9★</div>
+        <div class="stat-l">Calificación promedio</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">51</div>
+        <div class="stat-l">Opiniones verificadas</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">10+</div>
+        <div class="stat-l">Años de experiencia</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">24h</div>
+        <div class="stat-l">Respuesta rápida</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SERVICIOS
+══════════════════════════════ -->
+<section class="section section-dark" id="servicios">
+  <div class="container">
+    <div class="section-header">
+      <div class="pill">✦ Nuestros servicios</div>
+      <h2 class="section-title">Todo lo que necesitás</h2>
+      <p class="section-sub" style="margin:0 auto">
+        Profesionales para cada trabajo del hogar. Hacé clic en el servicio que necesitás para conocer más.
+      </p>
+    </div>
+    <div class="services-grid">
+
+      <a class="service-card" href="minifletes.html">
+        <div class="service-icon-wrap">🚛</div>
+        <h3>Minifletes</h3>
+        <p>Traslados de muebles, electrodomésticos y mudanzas completas. Rápido, seguro y al mejor precio.</p>
+        <div class="service-footer">
+          <span class="service-exp">10 años de experiencia</span>
+          <span class="service-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="service-card" href="albanileria.html">
+        <div class="service-icon-wrap">🧱</div>
+        <h3>Albañilería</h3>
+        <p>Construcción, refacción, reparación de paredes, techos, pisos y todo tipo de obra civil.</p>
+        <div class="service-footer">
+          <span class="service-exp">10 años de experiencia</span>
+          <span class="service-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="service-card" href="herreria.html">
+        <div class="service-icon-wrap">⚙️</div>
+        <h3>Herrería</h3>
+        <p>Fabricación y reparación de rejas, portones, escaleras, estructuras metálicas y barandas.</p>
+        <div class="service-footer">
+          <span class="service-exp">10 años de experiencia</span>
+          <span class="service-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="service-card" href="parquet.html">
+        <div class="service-icon-wrap">🪵</div>
+        <h3>Parquet</h3>
+        <p>Lijado, sellado, colocación y restauración de pisos de madera y parquet. Resultado impecable.</p>
+        <div class="service-footer">
+          <span class="service-exp">10 años de experiencia</span>
+          <span class="service-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="service-card" href="plomeria.html">
+        <div class="service-icon-wrap">🔧</div>
+        <h3>Plomería</h3>
+        <p>Destapaciones, reparación de pérdidas, instalación de sanitarios, tuberías y más.</p>
+        <div class="service-footer">
+          <span class="service-exp">10 años de experiencia</span>
+          <span class="service-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="service-card" href="gasista.html">
+        <div class="service-icon-wrap">🔥</div>
+        <h3>Gasista Matriculado</h3>
+        <p>Instalación y reparación de gasoductos, termotanques, calefones y artefactos a gas. Habilitados.</p>
+        <div class="service-footer">
+          <span class="service-exp">10 años de experiencia</span>
+          <span class="service-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="service-card" href="pintureria.html">
+        <div class="service-icon-wrap">🎨</div>
+        <h3>Pinturería</h3>
+        <p>Pintura interior y exterior, enduído, empapelado y terminaciones. Materiales y mano de obra.</p>
+        <div class="service-footer">
+          <span class="service-exp">10 años de experiencia</span>
+          <span class="service-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="service-card" href="soporte.html">
+        <div class="service-icon-wrap">💻</div>
+        <h3>Soporte Técnico</h3>
+        <p>Reparación, limpieza, formateo, instalación de Windows, recuperación de datos y mantenimiento.</p>
+        <div class="service-footer">
+          <span class="service-exp">10 años de experiencia</span>
+          <span class="service-arrow">→</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     POR QUÉ NOSOTROS
+══════════════════════════════ -->
+<section class="section" id="nosotros">
+  <div class="container">
+    <div class="nosotros-grid">
+      <div>
+        <div class="pill">¿Por qué elegirnos?</div>
+        <h2 class="section-title" style="margin-bottom:1rem">10 años<br>de confianza</h2>
+        <p class="section-sub" style="margin-bottom:2.5rem">
+          Llevamos una década brindando soluciones reales a vecinos de Buenos Aires
+          con puntualidad, seriedad y precios justos.
+        </p>
+        <div class="features-list">
+          <div class="feature">
+            <div class="feature-icon-wrap">⚡</div>
+            <div class="feature-text">
+              <h4>Respuesta inmediata</h4>
+              <p>Contacto directo por WhatsApp. Sin esperas, sin intermediarios. Te respondemos en minutos.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon-wrap">🛡️</div>
+            <div class="feature-text">
+              <h4>Trabajo garantizado</h4>
+              <p>Cada servicio cuenta con revisión post-trabajo y garantía de satisfacción total.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon-wrap">💰</div>
+            <div class="feature-text">
+              <h4>Precios honestos</h4>
+              <p>Presupuesto sin cargo y sin letra chica. Pagás solo lo acordado, sin sorpresas.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon-wrap">👷</div>
+            <div class="feature-text">
+              <h4>Profesionales verificados</h4>
+              <p>Todos nuestros técnicos tienen experiencia comprobable y referencias reales de más de 10 años.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rating-card">
+        <div class="rating-big">
+          <div class="rating-number">4.9</div>
+          <span class="stars-big">★★★★★</span>
+          <span class="rating-count">Basado en 51 opiniones verificadas</span>
+        </div>
+        <div class="rating-bars">
+          <div class="bar-row">
+            <span class="bar-label">5★</span>
+            <div class="bar-track"><div class="bar-fill" style="width:98%"></div></div>
+            <span class="bar-count">50</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">4★</span>
+            <div class="bar-track"><div class="bar-fill" style="width:2%"></div></div>
+            <span class="bar-count">1</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">3★</span>
+            <div class="bar-track"><div class="bar-fill" style="width:0%"></div></div>
+            <span class="bar-count">0</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">2★</span>
+            <div class="bar-track"><div class="bar-fill" style="width:0%"></div></div>
+            <span class="bar-count">0</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">1★</span>
+            <div class="bar-track"><div class="bar-fill" style="width:0%"></div></div>
+            <span class="bar-count">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     OPINIONES
+══════════════════════════════ -->
+<section class="section section-dark" id="opiniones">
+  <div class="container">
+    <div class="section-header">
+      <div class="pill">⭐ Opiniones reales</div>
+      <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+      <p class="section-sub" style="margin:0 auto">51 opiniones verificadas · Promedio 4.9 ★</p>
+    </div>
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#1a6b3a22;color:#1a6b3a">MR</div>
+          <div>
+            <div class="review-name">Marcela R.</div>
+            <div class="review-date">Cliente verificada</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Contratamos el servicio de miniflete para mudar una habitación completa. Llegaron puntual, los chicos súper cuidadosos con los muebles. El precio fue exactamente el presupuestado.</p>
+        <span class="review-tag">Minifletes</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#185fa522;color:#185fa5">JP</div>
+          <div>
+            <div class="review-name">Jorge P.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Llamé por una pérdida de agua que me tenía loco hace semanas. Vinieron el mismo día, identificaron el problema rápido y lo resolvieron sin romper nada. Impecable el trabajo.</p>
+        <span class="review-tag">Plomería</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#853b0b22;color:#853b0b">ST</div>
+          <div>
+            <div class="review-name">Sofía T.</div>
+            <div class="review-date">Cliente verificada</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Pintaron todo el departamento en dos días. Terminaciones perfectas, enduído incluido, sin manchas en el piso ni en los muebles. El resultado quedó increíble. Los recomiendo sin dudarlo.</p>
+        <span class="review-tag">Pinturería</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#3b6d1122;color:#3b6d11">RC</div>
+          <div>
+            <div class="review-name">Ramón C.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Hicieron una reparación importante en la terraza y también arreglaron unas grietas en las paredes. Trabajo prolijo y materiales de buena calidad. Volvería a contratarlos.</p>
+        <span class="review-tag">Albañilería</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#9b355622;color:#9b3556">LM</div>
+          <div>
+            <div class="review-name">Lucía M.</div>
+            <div class="review-date">Cliente verificada</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Mi computadora andaba muy lenta y pensé que iba a tener que comprar una nueva. La revisaron, la formatearon y quedó como el primer día. Excelente servicio y muy amables.</p>
+        <span class="review-tag">Soporte Técnico</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#534ab722;color:#534ab7">GF</div>
+          <div>
+            <div class="review-name">Gustavo F.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Me fabricaron una reja para la ventana del fondo. Medidas exactas, soldadura perfecta y pintura anticorrosiva incluida. Quedé muy conforme con el trabajo y el precio.</p>
+        <span class="review-tag">Herrería</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#0f6e5622;color:#0f6e56">VN</div>
+          <div>
+            <div class="review-name">Valeria N.</div>
+            <div class="review-date">Cliente verificada</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Lijaron y sellaron el parquet de todo el living. La madera quedó como nueva, el color es increíble. Trabajo impecable, muy profesionales y sin dejar polvo en el resto de la casa.</p>
+        <span class="review-tag">Parquet</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#a32d2d22;color:#a32d2d">DA</div>
+          <div>
+            <div class="review-name">Diego A.</div>
+            <div class="review-date">Cliente verificado</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Necesitaba instalar un termotanque nuevo y cambiar unos caños. El gasista vino con todos los materiales, hizo la instalación certificada y me entregó la documentación. Perfecto.</p>
+        <span class="review-tag">Gasista</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar" style="background:#185fa522;color:#185fa5">KM</div>
+          <div>
+            <div class="review-name">Karina M.</div>
+            <div class="review-date">Cliente verificada</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★☆</div>
+        <p class="review-text">Buen trabajo de pintura en general. Las terminaciones estuvieron bien, aunque tardaron un día más de lo prometido. Igual el resultado final fue bueno y el precio correcto.</p>
+        <span class="review-tag">Pinturería</span>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:2rem">
+      <p style="color:var(--texto2);font-size:.9rem">
+        ¿Ya trabajaste con nosotros?
+        <a href="https://wa.me/541160065713?text=Quiero%20dejar%20mi%20opinion" target="_blank"
+           style="color:var(--verde-neon);text-decoration:none;font-weight:600"> Dejá tu opinión por WhatsApp ↗</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     CONTACTO
+══════════════════════════════ -->
+<section class="section" id="contacto">
+  <div class="container">
+    <div class="cta-box">
+      <div class="pill">📱 Contacto directo</div>
+      <h2>¿Necesitás ayuda hoy?</h2>
+      <p>Escribinos por WhatsApp y te respondemos al instante. Contanos tu problema, cotizamos sin cargo y coordinamos el trabajo cuando más te convenga.</p>
+      <a href="https://wa.me/541160065713?text=Hola!%20Necesito%20un%20servicio%20y%20quiero%20una%20cotizacion"
+         class="wa-btn-big" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Escribir al 11-6006-5713
+      </a>
+      <div class="cta-info">
+        <div class="cta-info-item"><span>📍</span> Ciudad de Buenos Aires</div>
+        <div class="cta-info-item"><span>⏰</span> Lun–Sab, 8 a 20 hs</div>
+        <div class="cta-info-item"><span>⚡</span> Respuesta en minutos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FOOTER ══════ -->
+<footer>
+  <p><strong>FlexiServ</strong> · Minifletes y Servicios del Hogar · Buenos Aires, Argentina</p>
+  <p style="margin-top:.5rem">© 2025 FlexiServ. Todos los derechos reservados.</p>
+</footer>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/541160065713?text=Hola!%20Quiero%20consultar%20por%20un%20servicio"
+   class="wa-float" target="_blank" rel="noopener" title="WhatsApp">
+  <span class="wa-float-label">Escribinos ahora</span>
+  <svg viewBox="0 0 24 24" fill="white" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script src="nav.js"></script>
+</body>
+</html>
